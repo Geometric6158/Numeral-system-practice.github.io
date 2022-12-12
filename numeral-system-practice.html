@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Hier kun je binaire, octale en hexadecimale getallen oefenen!</title>
-		<link href="numeral-system-practice.css">
+		<link rel="stylesheet" href="numeral-system-practice.css">
 	</head>
 
 	<body>
@@ -11,7 +11,7 @@
 		<form>
 			<label for="binOrHex">Kies oefenonderdeel: &emsp;</label>
 		
-			<select id="binOrHex" style="background-color: #6fffff; outline-color: #6f7f7f;" required>
+			<select id="binOrHex" required>
 				<option style="display: none"></option>
 		
 				<optgroup label="Binair">
@@ -42,7 +42,7 @@
 
 		<h3 id="VraagTekst"></h3>
 		<h3 id="VraagNummer"></h3>
-		<input id="AntwoordInvoer" type="hidden" style="background-color: #6fffff;" onKeydown="Check(event);" required>
+		<input id="AntwoordInvoer" type="hidden" onKeydown="Check(event);" required>
 
 		<script src="numeral-system-practice.js"></script>
 	</body>
